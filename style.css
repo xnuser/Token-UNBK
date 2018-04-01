@@ -1,0 +1,85 @@
+#wrapper {
+ background-color: #771100;
+ display: block;
+ height: auto;
+ width: auto;
+ margin-right: auto;
+ margin-left: auto;
+ position: relative;
+}
+
+#header {
+width:auto;
+padding:10px;
+height:auto;
+background:#771100;
+text-align:center;
+color: white;
+}
+#navigasi {
+ display: block;
+ height: auto;
+ width: 100%;
+ background-color: #ccddee;
+ float: left;
+ position: relative;
+ visibility: visible;
+ font-size:30px;
+ font-weight:bold;
+ }
+#kiri{
+padding-top:10px;
+padding-bottom:10px;
+height:auto;
+width:33%;
+margin-right:5px;
+float:left;
+margin-top:10px;
+background:#cc8800;
+text-align:center;
+color: white;
+}
+#tengah{
+padding-top:10px;
+padding-bottom:10px;
+height:auto;
+float:left;
+width:33%;
+margin-top:10px;
+background:#0088cc;
+text-align:center;
+color: white;
+}
+#kanan{
+padding-top:10px;
+padding-bottom:10px;
+float:right;
+height:auto;
+width:33%;
+margin-top:10px;
+background:#008822;
+text-align:center;
+color: white;
+}
+#token{
+	font-size: 60px;
+	font-weight:bold;
+}
+
+#footer{
+padding:5px;
+height:35px;
+text-align:center;
+background:#f4fcf9;
+margin-top:5px;
+clear:both;
+font-size: 10px;
+}
+.clear{
+height:5px;
+clear:both;
+}
+.slidebox{
+ width:1400px;
+ height:200px;
+}
