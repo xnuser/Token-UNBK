@@ -14,7 +14,7 @@
 	?>
 		<script language="JavaScript">
 			alert('Sesi Berhasil diinput!');
-			document.location='index.php';
+			document.location='input.php';
 		</script>
 	<?php
 	}

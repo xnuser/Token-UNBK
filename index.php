@@ -10,17 +10,20 @@
 <body>
 <div id="wrapper">
   <div id="header"><h2><b>
-UJIAN NASIONAL BERBASIS KOMPUTER (UNBK)</br>
+UJIAN NASIONAL BERBASIS KOMPUTER (UNBK)</br></br>
  <?php
 		include "koneksi.php";
 		//view data mahasiswa di dalam database
-		$Lihat	="SELECT * FROM sesi ORDER BY sesi DESC LIMIT 1";
+		$Lihat	="SELECT * FROM sesi WHERE no IN
+		(
+		SELECT max(no) as no FROM sesi ORDER BY sesi
+		)";
 		$Tampil = mysql_query($Lihat);
 		while (	$hasil = mysql_fetch_array ($Tampil)) {
 				$token	= stripslashes ($hasil['sesi']);
 				{
 	?>
-Sesi: <?=$token?><div align="center"></div>
+SESI: <?=$token?><div align="center"></div>
 	<?php  
 			}
 		}
@@ -29,13 +32,16 @@ Sesi: <?=$token?><div align="center"></div>
 	?></br><?php
 		include "koneksi.php";
 		//view data mahasiswa di dalam database
-		$Lihat	="SELECT * FROM sesi ORDER BY waktu DESC LIMIT 1";
+		$Lihat	="SELECT * FROM sesi WHERE no IN
+		(
+		SELECT max(no) as no FROM sesi ORDER BY waktu
+		)";
 		$Tampil = mysql_query($Lihat);
 		while (	$hasil = mysql_fetch_array ($Tampil)) {
 				$token	= stripslashes ($hasil['waktu']);
 				{
 	?>
-WAKTU: <?=$token?> WIB<div align="center"></div>
+WAKTU: <?=$token?><div align="center"></div>
 	<?php  
 			}
 		}
@@ -48,7 +54,10 @@ WAKTU: <?=$token?> WIB<div align="center"></div>
 <?php
 		include "koneksi.php";
 		//view data mahasiswa di dalam database
-		$Lihat	="SELECT * FROM informasi ORDER BY info DESC LIMIT 1";
+		$Lihat	="SELECT * FROM informasi WHERE no IN
+		(
+		SELECT max(no) as no FROM informasi ORDER BY info
+		)";
 		$Tampil = mysql_query($Lihat);
 		while (	$hasil = mysql_fetch_array ($Tampil)) {
 				$token	= stripslashes ($hasil['info']);
@@ -67,7 +76,10 @@ WAKTU: <?=$token?> WIB<div align="center"></div>
 	<?php
 		include "koneksi.php";
 		//view data mahasiswa di dalam database
-		$Lihat	="SELECT * FROM token3 ORDER BY token DESC LIMIT 1";
+		$Lihat	="SELECT * FROM token3 WHERE no IN
+		(
+		SELECT max(no) as no FROM token3 ORDER BY token
+		)";
 		$Tampil = mysql_query($Lihat);
 		while (	$hasil = mysql_fetch_array ($Tampil)) {
 				$token	= stripslashes ($hasil['token']);
@@ -86,7 +98,10 @@ WAKTU: <?=$token?> WIB<div align="center"></div>
 	<?php
 		include "koneksi.php";
 		//view data mahasiswa di dalam database
-		$Lihat	="SELECT * FROM token2 ORDER BY token DESC LIMIT 1";
+		$Lihat	="SELECT * FROM token2 WHERE no IN
+		(
+		SELECT max(no) as no FROM token2 ORDER BY token
+		)";
 		$Tampil = mysql_query($Lihat);
 		while (	$hasil = mysql_fetch_array ($Tampil)) {
 				$token	= stripslashes ($hasil['token']);
@@ -105,7 +120,10 @@ WAKTU: <?=$token?> WIB<div align="center"></div>
 	<?php
 		include "koneksi.php";
 		//view data mahasiswa di dalam database
-		$Lihat	="SELECT * FROM token1 ORDER BY token DESC LIMIT 1";
+		$Lihat	="SELECT * FROM token1 WHERE no IN
+		(
+		SELECT max(no) as no FROM token1 ORDER BY token
+		)";
 		$Tampil = mysql_query($Lihat);
 		while (	$hasil = mysql_fetch_array ($Tampil)) {
 				$token	= stripslashes ($hasil['token']);
