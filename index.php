@@ -141,8 +141,7 @@ WAKTU: <?=$token?><div align="center"></div>
 <div class="clear">
 </div>
 <div id="footer">
-</br>
-<div>
+
 
 <!-- Slider -->
     <div id="slider">
@@ -209,14 +208,10 @@ WAKTU: <?=$token?><div align="center"></div>
       </div>
     </div>
 
-</div>
 
-</script></div></br></br></br></br></br></br></br></br></br>
-<div align="center">
-<h2>DISELANGGARAKAN OLEH:</br>SMK NEGERI 2 SUNGAI PENUH</br>&copy 2018</h2></div>
+
+
 </div>
 </div>
-<div align="center">
-Powered By Wira Ade Putra</div>
 </body>
 </html>
