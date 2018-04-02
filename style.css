@@ -62,18 +62,17 @@ text-align:center;
 color: white;
 }
 #token{
-	font-size: 60px;
+	font-size: 80px;
 	font-weight:bold;
 }
 
 #footer{
-padding:5px;
-height:35px;
-text-align:center;
-background:#f4fcf9;
-margin-top:5px;
-clear:both;
-font-size: 10px;
+	height: 30px;
+	background: black;
+	font-size: 15px;
+	color: orange;
+	text-align: center;
+	padding-top:10px;
 }
 .clear{
 height:5px;

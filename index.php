@@ -140,10 +140,8 @@ WAKTU: <?=$token?><div align="center"></div>
 </div>
 <div class="clear">
 </div>
-<div id="footer">
-
-
-<!-- Slider -->
+<div>
+	<!-- Slider -->
     <div id="slider">
       <div class="slides">
         <div class="slider">
@@ -207,11 +205,9 @@ WAKTU: <?=$token?><div align="center"></div>
         </ul>
       </div>
     </div>
-
-
-
-
 </div>
+<div id="footer">
+    <p>&copy;2018 BY Wira Ade Putra for UNBK SMK Negeri 2 Sungai Penuh</p>
 </div>
 </body>
 </html>
